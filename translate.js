@@ -19,7 +19,7 @@ function randomInt() {
 
 
 
-
+var qq = "hello";
 
 class user {
   constructor(){
@@ -31,29 +31,31 @@ class user {
 
 // // this how you make a message object.
 // var b =  new messageModel('hello','fr','en');
+var methods  = {
+trans: function  (m) {
 
-var trans = function (m) {
-  console.log(messageModel);
-  console.log("HJGDHJGFUYGF")
   this.text =  m.text;
   this.target = m.target;
   this.original = m.original;
  
 // Translates some text into Russian
 translate
-  .translate(text, target)
+  .translate(this.text, this.target)
   .then(results => {
     const translation = results[0];
  
-    console.log(`Text: ${text}`);
+    console.log(`Text: ${this.text}`);
     console.log(`Translation: ${translation}`);
   })
   .catch(err => {
     console.error('ERROR:', err);
   });
+    }
 }
 
-module.exports = trans();
+
+exports.data = methods;
+// module.exports = qq;
 
 // trans(b);
 // console.log(randomInt());

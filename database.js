@@ -1,6 +1,6 @@
 
-const messageModel = require('./messageModel.js');
-const translate = require('./translate.js');
+// const messageModel = require('./messageModel.js');
+// const translate = require('./translate.js');
 
 
 // const m = require('mongoose');
@@ -29,6 +29,8 @@ const translate = require('./translate.js');
 //   });
 //   console.log("after save");
 
-var b = new messageModel('hello','fr','en');
-console.log(b);
-translate.trans(b);
+
+// var b = new messageModel('hello','fr','en');
+// console.log(b);
+// // console.log(translate.qq);
+// translate.data.trans(b);
